@@ -218,6 +218,8 @@ android {
             keyPassword 'android'
         }
     }
+
+
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
@@ -277,6 +279,8 @@ dependencies {
     } else {
         implementation jscFlavor
     }
+
+    implementation project(':react-native-i18n')
 }
 
 if (isNewArchitectureEnabled()) {
